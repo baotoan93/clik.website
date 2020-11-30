@@ -1967,7 +1967,7 @@
             resizeId = setTimeout(function () {
               FP.reBuild(true);
               previousHeight = currentHeight;
-            }, 0);
+            }, 100);
           }
         }
       } else {

@@ -80,6 +80,14 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  #actions .img-action-2 .content-overall .content-step {
+    padding-left: 32px;
+  }
+
+  .section .section-content .section-content-description {
+    width: 80%;
+  }
 }
 
 /* Large devices (desktops, less than 1200px) */
@@ -118,15 +126,6 @@
   #actions .img-action-2 .content-title {
     font-size: 30px;
     line-height: 36px;
-  }
-
-  #actions .img-action-2 .content-overall .content-step {
-    padding-left: 32px;
-  }
-
-  .section .section-content {
-    padding: 20px 0;
-    width: 85%;
   }
 }
 
@@ -182,6 +181,45 @@
 
   }
 
+  #home .home-title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .section .section-content .content-title .title-first-level {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .section .section-content .content-title .title-second-level {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .section .section-content .content-description {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .section .section-content .section-content-description {
+    width: 90%;
+  }
+
+  body:not(.is-mobile) .section .section-content .content-title .title-first-level {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  body:not(.is-mobile) .section .section-content .content-title .title-second-level {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  body:not(.is-mobile) .section .section-content .content-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .is-mobile #problems .problem-content .img-problems-1 .content-title {
     font-size: 24px;
     line-height: 30px;
@@ -222,6 +260,7 @@
   }
 
   .is-mobile #actions .img-action-2 .content-overall .content-step .action-btn {
+    font-size: 14px;
     height: 36px;
     margin-top: 10px;
     width: 144px;
@@ -232,34 +271,9 @@
     line-height: 16px;
   }
 
-  #home .home-title {
-    font-size: 36px;
-    line-height: 44px;
-  }
-
   .is-mobile #home .home-title {
     font-size: 22px;
     line-height: 30px;
-  }
-
-  .section .section-content {
-    padding: 10px 0;
-    width: 90%;
-  }
-
-  .section .section-content .content-title .title-first-level {
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-  .section .section-content .content-title .title-second-level {
-    font-size: 14px;
-    line-height: 18px;
-  }
-
-  .section .section-content .content-description {
-    font-size: 11px;
-    line-height: 16px;
   }
 }
 
@@ -309,11 +323,6 @@
 
   #case-study .content .gallery .gallery-item .overlay .sub-header {
     margin-bottom: 6px;
-  }
-
-  .section .section-content {
-    padding: 5px 0;
-    width: 90%;
   }
 
   .section .section-content .content-title .title-first-level {
