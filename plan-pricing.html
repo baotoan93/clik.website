@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+
+    <meta
+      property="description"
+      content="Với Clik, ứng dụng công nghệ trong lĩnh vực Bất động sản (Proptech) và Trang trí nội thất (Home Furnishing) luôn dễ dàng."
+    />
+
+    <meta property="fb:app_id" content="932232577295350" />
+    <meta property="og:site_name" content="Developer" />
+    <meta property="og:url" content="https://developer.clik.vn" />
+    <meta
+      property="og:description"
+      content="Với Clik, ứng dụng công nghệ trong lĩnh vực Bất động sản (Proptech) và Trang trí nội thất (Home Furnishing) luôn dễ dàng."
+    />
+    <meta property="og:title" content="Clik | Developer" />
+    <meta property="og:type" content="game" />
+    <meta
+      property="og:image"
+      content="https://developer.clik.vn/img/solution-3-1.jpg"
+    />
+
+    <meta itemprop="name" content="Clik | Developer" />
+    <meta
+      itemprop="description"
+      content="Với Clik, ứng dụng công nghệ trong lĩnh vực Bất động sản (Proptech) và Trang trí nội thất (Home Furnishing) luôn dễ dàng."
+    />
+    <meta
+      itemprop="image"
+      content="https://developer.clik.vn/img/solution-3-1.jpg"
+    />
+
+    <meta name="twitter:card" content="player" />
+    <meta name="twitter:site" content="@TwitterDev" />
+    <meta name="twitter:title" content="Clik | Developer" />
+    <meta
+      name="twitter:description"
+      content="Với Clik, ứng dụng công nghệ trong lĩnh vực Bất động sản (Proptech) và Trang trí nội thất (Home Furnishing) luôn dễ dàng."
+    />
+    <meta
+      name="twitter:image"
+      content="https://developer.clik.vn/img/solution-3-1.jpg"
+    />
+
+    <title>Clik | Developer</title>
+    <!-- Favicons -->
+    <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png" />
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="css/plan-pricing.css" />
+    <!-- <link rel="stylesheet" href="css/responsive.css" /> -->
+  </head>
+
+  <body>
+    <div id="bds-plan-pricing">
+      <img class="image-plan-pricing" src="img/plan-pricing.png" alt="" />
+    </div>
+    <div id="bds-plan-pricing-mobile-standard">
+      <img
+        id="image-plan-pricing-mobile"
+        src="img-mobile/mobile_standard.png"
+        alt=""
+        onclick="changeImageMobile()"
+      />
+    </div>
+    <!--========== start footer section =============-->
+    <script src="js/jQuery-plugins.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+      $(document).ready(() => {
+        'use strict';
+
+        // Extra small devices (portrait phones, less than 576px)
+        if (window.innerWidth > 575) {
+          $('#bds-plan-pricing').css('display', 'block');
+          $('#bds-plan-pricing-mobile-standard').css('display', 'none');
+        } else {
+          $('#bds-plan-pricing-mobile-standard').height(window.innerHeight);
+          $('#bds-plan-pricing').css('display', 'none');
+        }
+
+        $(window).resize(() => {
+          setTimeout(() => {
+            if (window.innerWidth > 575) {
+              $('#bds-plan-pricing').css('display', 'block');
+              $('#bds-plan-pricing-mobile-standard').css('display', 'none');
+            } else {
+              $('#bds-plan-pricing-mobile-standard').height(window.innerHeight);
+                $('#bds-plan-pricing-mobile-standard').css('display', 'block');
+              $('#bds-plan-pricing').css('display', 'none');
+            }
+          }, 300);
+        });
+      });
+    </script>
+  </body>
+</html>

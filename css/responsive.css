@@ -1,0 +1,564 @@
+/* Large devices (desktops, less than 1600px) */
+@media (max-width: 1600px) {
+  .section .section-content .content-title .title-first-level {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .section .section-content .content-title .title-second-level {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .section .section-content .content-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199px) {
+
+  #main .solution-btn,
+  #main .view-detail-btn {
+    font-size: 13px;
+    height: 40px;
+    padding: 8px 28px;
+  }
+
+  #main .view-detail-btn .icon {
+    width: 40px !important;
+  }
+
+  .section .section-content {
+    padding: 20px 0;
+    width: 85%;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) {
+  #qna2 .img-qna-2-3 {
+    bottom: 10px;
+  }
+
+  #case-study .content {
+    top: 16px;
+  }
+
+  #case-study .content .title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  #case-study .content .gallery {
+    margin-top: 15px;
+  }
+
+  #case-study .content .gallery .gallery-item {
+    height: 265px;
+  }
+
+  #case-study .content .gallery .gallery-item .overlay {
+    height: fit-content;
+  }
+
+  #case-study .content .gallery .gallery-item .overlay .header {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  #case-study .content .gallery .gallery-item .overlay .sub-header {
+    margin-bottom: 6px;
+  }
+
+  #main .solution-btn,
+  #main .view-detail-btn {
+    font-size: 11px;
+    height: 26px;
+    padding: 3px 24px 4px;
+  }
+
+  #main .view-detail-btn {
+    padding-left: 48px;
+  }
+
+  #main .view-detail-btn .icon {
+    border-radius: 10px !important;
+  }
+
+  .section .section-content {
+    padding: 10px 0;
+    width: 90%;
+  }
+
+  .section .section-content .content-title .title-first-level {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .section .section-content .content-title .title-second-level {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .section .section-content .content-description {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {
+
+  #main .solution-btn,
+  #main .view-detail-btn {
+    font-size: 11px;
+    height: 20px;
+    padding: 0 24px 1px;
+  }
+
+  #actions .img-action-1 {
+    width: 65%;
+  }
+
+  #actions .img-action-2 {
+    width: 35%;
+  }
+
+  #case-study .content {
+    top: 16px;
+  }
+
+  #case-study .content .title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  #case-study .content .gallery {
+    margin-top: 15px;
+  }
+
+  #case-study .content .gallery .gallery-item {
+    height: 265px;
+  }
+
+  #case-study .content .gallery .gallery-item .overlay {
+    height: fit-content;
+  }
+
+  #case-study .content .gallery .gallery-item .overlay .header {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  #case-study .content .gallery .gallery-item .overlay .sub-header {
+    margin-bottom: 6px;
+  }
+
+  .section .section-content {
+    padding: 5px 0;
+    width: 90%;
+  }
+
+  .section .section-content .content-title .title-first-level {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .section .section-content .content-title .title-second-level {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .section .section-content .content-description {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  html {
+    overflow: hidden;
+  }
+
+  body {
+    background-color: #e5e5e5;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #fp-nav {
+    display: none;
+  }
+
+  .is-mobile.show-menu .menu {
+    opacity: 1;
+    right: 0;
+  }
+
+  .is-mobile .menu .menu-content {
+    background-color: #fff;
+    height: 100%;
+    margin-left: auto;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+  }
+
+  .is-mobile .menu .menu-content .img-close-menu-icon {
+    cursor: pointer;
+    height: 24px;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 24px;
+  }
+
+  .is-mobile .menu .menu-content .menu-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0 16px;
+  }
+
+  .is-mobile .menu .menu-content .menu-content-wrapper .menu-item {
+    border-bottom: 1px solid #E4E4E4;
+    color: #000;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 16px 0;
+    text-transform: uppercase;
+  }
+
+  .is-mobile .menu .menu-content .menu-content-wrapper .menu-item.active {
+    color: #0752A3;
+  }
+
+  .is-mobile .menu .menu-content .menu-content-wrapper .menu-item.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  .is-mobile #mobile-main,
+  .is-mobile #mobile-main-about-us {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+  }
+
+  .is-mobile #mobile-main::-webkit-scrollbar,
+  .is-mobile #mobile-main-about-us::-webkit-scrollbar {
+    width: 0;
+  }
+
+  #mobile-main .img-mobile-logo,
+  #mobile-main-about-us .img-mobile-logo {
+    height: 24px;
+    left: 16px;
+    position: absolute;
+    top: 16px;
+  }
+
+  #mobile-main .img-mobile-lang,
+  #mobile-main-about-us .img-mobile-lang {
+    height: 24px;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
+
+  #mobile-main .img-mobile-banner-title {
+    left: 0;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+  }
+
+  #mobile-main .mobile-background-image {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin-bottom: 6px;
+    width: 100%;
+  }
+
+  #mobile-main .img-mobile-home {
+    background-image: url('../img/home-1.jpg');
+  }
+
+  #mobile-main .img-mobile-problem {
+    background-image: url('../img/problem-2.jpg');
+    height: 220px;
+    margin: 0;
+  }
+
+  #mobile-main .img-mobile-problem-text {
+    background-color: #fff;
+    height: calc(100vw * 1.66);
+    object-fit: contain;
+    width: 100%;
+  }
+
+  #mobile-main .img-mobile-solutions {
+    background-image: url('../img/solution-1-1.jpg');
+    height: 220px;
+    margin: 0;
+  }
+
+  #mobile-main .img-mobile-solutions2 {
+    background-image: url('../img/solution-2-1.png');
+    height: 220px;
+    margin: 0;
+  }
+
+  #mobile-main .img-mobile-solutions3 {
+    background-image: url('../img/solution-3-1.jpg');
+    height: 220px;
+    margin: 0;
+  }
+
+  #mobile-main .img-mobile-solutions4 {
+    background-image: url('../img/solution-4-1.jpg');
+    height: 220px;
+    margin: 0;
+  }
+
+  #mobile-main .img-mobile-solutions5 {
+    background-image: url('../img/solution-5-1.jpg');
+    height: 220px;
+    margin: 0;
+  }
+
+  #mobile-main .img-mobile-solutions6 {
+    background-image: url('../img/solution-6-1.jpg');
+    height: 220px;
+    margin: 0;
+  }
+
+
+  #mobile-main .img-mobile-solutions7 {
+    background-image: url('../img/solution-7-1.jpg');
+    height: 220px;
+    margin: 0;
+  }
+
+  #mobile-main .img-mobile-solutions8 {
+    background-image: url('../img/solution-8-1.png');
+    height: 220px;
+    margin: 0;
+  }
+
+  #mobile-main .section-content,
+  .is-mobile.show-detail .section-content {
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 6px;
+    padding: 24px;
+    text-align: center;
+  }
+
+  #mobile-main .section-content .content-title,
+  #mobile-main .section-content .content-description,
+  .is-mobile.show-detail .section-content .content-title,
+  .is-mobile.show-detail .section-content .content-description {
+    text-align: left;
+  }
+
+  #mobile-main .section-content .content-title .title-first-level,
+  .is-mobile.show-detail .content-title .title-first-level {
+    font-family: 'Conv_Barlow-Regular';
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+
+  #mobile-main .section-content .content-title .title-second-level,
+  .is-mobile.show-detail .content-title .title-second-level {
+    font-family: 'Conv_Barlow-Bold';
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+
+  #mobile-main .section-content .content-description,
+  .is-mobile.show-detail .section-content .content-description {
+    font-family: 'Conv_Barlow-Regular';
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  #mobile-main .section-content .solution-btn {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 30px;
+    height: 48px;
+    margin-top: 24px;
+    padding: 12px 32px;
+  }
+
+  #mobile-main .img-mobile-action {
+    background-image: url('../img/action-1.jpg');
+    height: 220px;
+    margin: 0;
+  }
+
+  #mobile-main .img-mobile-action-text {
+    background-color: #fff;
+    height: calc(100vw * 1.46);
+    object-fit: contain;
+    width: 100%;
+  }
+
+  #mobile-main .img-mobile-case-study {
+    background-image: url('../img/case.png');
+    height: unset;
+    margin: 0;
+    padding-bottom: 24px;
+    position: relative;
+  }
+
+  #mobile-main .img-mobile-case-study .title {
+    color: #fff;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 32px;
+    padding-top: 24px;
+    text-align: center;
+    width: 100%;
+  }
+
+  #mobile-main .img-mobile-case-study .gallery {
+    padding: 0 24px;
+  }
+
+  #mobile-main .img-mobile-case-study .gallery .gallery-item {
+    width: 100%;
+  }
+
+  #mobile-main .img-mobile-case-study .gallery .gallery-item:not(:last-child) .cover {
+    margin-bottom: 24px;
+  }
+
+  #mobile-main .img-mobile-case-study .gallery .gallery-item .cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  #mobile-main .img-mobile-case-study .gallery .gallery-item .cover .overlay {
+    background: linear-gradient(to bottom,
+        transparent 0%,
+        #000 100%);
+    bottom: 0;
+    left: 0;
+    padding: 11.5px 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  #mobile-main .img-mobile-case-study .gallery .gallery-item .cover .overlay .header {
+    color: #fff;
+    font-family: 'Conv_Barlow-Bold';
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  #mobile-main .img-mobile-case-study .gallery .gallery-item .cover .overlay .sub-header {
+    color: #fff;
+    font-family: 'Conv_Barlow-Regular';
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  #mobile-main .img-mobile-qna {
+    background-image: url('../img/qna-2-2.jpg');
+    margin: 0;
+    position: relative;
+  }
+
+  #mobile-main .img-mobile-qna .img-mobile-qna-text {
+    height: 90%;
+    object-fit: contain;
+    width: 100%;
+  }
+
+  #mobile-main .img-mobile-qna .img-mobile-footer-text {
+    bottom: 16px;
+    color: #fff;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+
+  #mobile-main .section-content .content-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+
+  #mobile-main .section-content .content-actions .view-detail-btn {
+    align-items: center;
+    background-color: unset;
+    border: unset;
+    display: flex;
+    padding: 0;
+    position: relative;
+  }
+
+  #mobile-main .section-content .content-actions .view-detail-btn .icon {
+    border: 2px solid #000;
+    border-radius: 50%;
+    height: 48px;
+    margin-right: 8px;
+    position: relative;
+    width: 48px;
+  }
+
+  #mobile-main .section-content .content-actions .view-detail-btn .icon span {
+    font-size: 24px;
+    left: 50%;
+    position: absolute;
+    top: 46%;
+    transform: translate(-50%, -50%);
+  }
+
+  #mobile-main .section-content .content-actions .solution-btn {
+    margin: 0;
+  }
+
+  .is-mobile.show-detail .img-mobile-problem-text {
+    height: 55vw;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  #mobile-main-about-us {
+    background: linear-gradient(284.13deg, #0F256E 0.55%, #0752A3 100%);
+    ;
+  }
+
+  #mobile-main-about-us .img-mobile-banner-title {
+    margin: 40px 0 33px;
+    width: 100%;
+  }
+
+  #mobile-main-about-us .img-mobile-content {
+    padding: 0 24px 16px;
+  }
+
+  #mobile-main-about-us .img-mobile-content img {
+    height: 100%;
+    width: 100%;
+  }
+}
