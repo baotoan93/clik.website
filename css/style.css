@@ -422,37 +422,71 @@ section {
   width: 100%;
 }
 
-#home .img-home-2 {
-  left: 50%;
-  object-fit: contain;
-  position: absolute;
-  top: 64px;
-  transform: translateX(-50%);
-  width: 100%;
-  z-index: 1;
-}
-
-#problems .img-problems-1 {
-  height: 100%;
+#home .home-title {
+  color: #fff;
+  font-family: 'Conv_Barlow-Bold';
+  font-size: 42px;
   left: 0;
-  margin: 0 25px 0 40px;
-  object-fit: contain;
+  line-height: 50px;
   position: absolute;
-  top: 0;
-  width: 25%;
+  text-align: center;
+  top: 16%;
+  width: 100%;
 }
 
-#problems .img-problems-2 {
+#home .home-title span {
+  color: #57f5ff;
+}
+
+#problems .fp-tableCell {
+  position: relative;
+}
+
+#problems .problem-content .img-problems-1 {
+  color: #000;
+  left: 0;
+  max-width: 30%;
+  padding: 0 32px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30%;
+}
+
+#problems .problem-content .img-problems-1 .content-title {
+  font-family: 'Conv_Barlow-Bold';
+  font-size: 40px;
+  line-height: 47px;
+  margin-bottom: 16px;
+}
+
+#problems .problem-content .img-problems-1 .content-overall:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+#problems .problem-content .img-problems-1 .content-overall .content-overall-title {
+  font-family: 'Conv_Barlow-Bold';
+  font-size: 22px;
+  line-height: 28px;
+}
+
+#problems .problem-content .img-problems-1 .content-overall .content-overall-description {
+  font-family: 'Conv_Barlow-Regular';
+  font-size: 20px;
+  line-height: 28px;
+}
+
+#problems .problem-content .img-problems-2 {
   background-image: linear-gradient(to left, #0d2d77, #0752a3);
   height: 100%;
-  overflow: hidden;
+  max-width: 70%;
   position: absolute;
   right: 0;
   top: 0;
-  width: calc(75% - 50px);
+  width: 70%;
 }
 
-#problems .img-problems-2 img {
+#problems .problem-content .img-problems-2 img {
   height: 100%;
   margin: auto 0;
   object-fit: cover;
@@ -485,22 +519,88 @@ section {
   object-fit: cover;
   position: absolute;
   top: 0;
-  width: calc(75% - 50px);
+  width: 70%;
 }
 
 #actions .img-action-2 {
-  height: 100%;
+  color: #000;
+  padding: 0 32px;
   position: absolute;
   right: 0;
-  top: 0;
-  width: calc(25% + 50px);
-  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30%;
 }
 
-#actions .img-action-2 img {
-  height: 100%;
-  object-fit: contain;
-  width: 100%;
+#actions .img-action-2 .content-title {
+  font-family: 'Conv_Barlow-Bold';
+  font-size: 40px;
+  line-height: 47px;
+}
+
+#actions .img-action-2 .content-overall {
+  margin: 24px 0 32px;
+}
+
+#actions .img-action-2 .content-overall .content-step {
+  border-left: 2px solid #096dd9;
+  margin-left: 16px;
+  padding-left: 40px;
+  position: relative;
+}
+
+#actions .img-action-2 .content-overall .content-step::before {
+  background-color: #096dd9;
+  border-radius: 50%;
+  color: #fff;
+  content: attr(data-step);
+  font-family: 'Conv_Barlow-Bold';
+  font-size: 22px;
+  height: 32px;
+  left: 0;
+  line-height: 36px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transform: translateX(calc(-50% - 1px));
+  width: 32px;
+}
+
+#actions .img-action-2 .content-overall .content-step:last-child {
+  border-color: transparent;
+}
+
+#actions .img-action-2 .content-overall .content-step:not(:last-child) {
+  padding-bottom: 32px;
+}
+
+#actions .img-action-2 .content-overall .content-step .content-step-title {
+  font-family: 'Conv_Barlow-Bold';
+  font-size: 22px;
+  line-height: 28px;
+}
+
+#actions .img-action-2 .content-overall .content-step .content-step-description {
+  font-family: 'Conv_Barlow-Regular';
+  font-size: 20px;
+  line-height: 28px;
+}
+
+#actions .img-action-2 .content-overall .content-step .action-btn {
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 30px;
+  font-size: 20px;
+  height: 48px;
+  margin-top: 16px;
+  width: 166px;
+}
+
+#actions .img-action-2 .content-note {
+  font-family: 'Conv_Barlow-Regular';
+  font-size: 20px;
+  font-style: italic;
+  line-height: 28px;
 }
 
 #case-study .fp-tableCell {
@@ -521,13 +621,14 @@ section {
 
 #case-study .content .title {
   align-items: center;
-  color: #ffffff;
+  color: #fff;
   display: flex;
-  font-size: 36px;
+  font-family: 'Conv_Barlow-Bold';
+  font-size: 40px;
   font-style: normal;
   font-weight: bold;
   justify-content: center;
-  line-height: 43px;
+  line-height: 47px;
 }
 
 #case-study .content .gallery {
@@ -713,8 +814,6 @@ section {
 }
 
 .section .section-content .content-title {
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-  margin-right: 32px;
   padding-right: 16px;
   position: relative;
   width: 35%;
@@ -722,21 +821,23 @@ section {
 
 .section .section-content .content-title .title-first-level {
   font-family: 'Conv_Barlow-Regular';
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 28px;
   text-transform: uppercase;
 }
 
 .section .section-content .content-title .title-second-level {
   font-family: 'Conv_Barlow-Bold';
-  font-size: 26px;
-  line-height: 30px;
+  font-size: 30px;
+  line-height: 34px;
 }
 
 .section .section-content .content-description {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
   font-family: 'Conv_Barlow-Regular';
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 22px;
+  line-height: 30px;
+  padding-left: 32px;
   width: 65%;
 }
 
@@ -881,7 +982,6 @@ section {
   bottom: 0;
   display: flex;
   justify-content: space-between;
-  justify-content: space-between;
   left: 0;
   padding-right: 32px;
   position: absolute;
@@ -899,7 +999,6 @@ section {
 #main #solutions4 .content-actions .view-detail-btn .icon {
   border: 2px solid #000;
   border-radius: 50%;
-  font-size: 24px;
   font-size: 16px;
   height: 100%;
   left: 0;

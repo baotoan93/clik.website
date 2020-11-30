@@ -1,6 +1,72 @@
 /* Large devices (desktops, less than 1600px) */
 @media (max-width: 1600px) {
   .section .section-content .content-title .title-first-level {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .section .section-content .content-title .title-second-level {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .section .section-content .content-description {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  #problems .problem-content .img-problems-1 .content-title {
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  #problems .problem-content .img-problems-1 .content-overall .content-overall-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  #problems .problem-content .img-problems-1 .content-overall .content-overall-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  #actions .img-action-2 .content-title {
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  #actions .img-action-2 .content-overall .content-step::before {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  #actions .img-action-2 .content-overall .content-step .content-step-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  #actions .img-action-2 .content-overall .content-step .content-step-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  #actions .img-action-2 .content-overall .content-step .action-btn {
+    font-size: 16px;
+  }
+
+  #actions .img-action-2 .content-note {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  #case-study .content .title {
+    font-size: 36px;
+    line-height: 43px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .section .section-content .content-title .title-first-level {
     font-size: 18px;
     line-height: 22px;
   }
@@ -28,6 +94,34 @@
 
   #main .view-detail-btn .icon {
     width: 40px !important;
+  }
+
+  #problems .problem-content .img-problems-1 {
+    max-width: 40%;
+    width: 40%;
+  }
+
+  #problems .problem-content .img-problems-2 {
+    max-width: 60%;
+    width: 60%;
+  }
+
+  #actions .img-action-1 {
+    width: 60%;
+  }
+
+  #actions .img-action-2 {
+    padding: 0 16px;
+    width: 40%;
+  }
+
+  #actions .img-action-2 .content-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  #actions .img-action-2 .content-overall .content-step {
+    padding-left: 32px;
   }
 
   .section .section-content {
@@ -80,11 +174,72 @@
   }
 
   #main .view-detail-btn {
-    padding-left: 48px;
+    padding-left: 30px !important;
   }
 
   #main .view-detail-btn .icon {
-    border-radius: 10px !important;
+    width: 26px !important;
+
+  }
+
+  .is-mobile #problems .problem-content .img-problems-1 .content-title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 8px;
+  }
+
+  .is-mobile #problems .problem-content .img-problems-1 .content-overall:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  .is-mobile #problems .problem-content .img-problems-1 .content-overall .content-overall-title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .is-mobile #problems .problem-content .img-problems-1 .content-overall .content-overall-description {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .is-mobile #actions .img-action-2 .content-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .is-mobile #actions .img-action-2 .content-overall {
+    margin: 15px 0;
+  }
+
+  .is-mobile #actions .img-action-2 .content-overall .content-step .content-step-title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .is-mobile #actions .img-action-2 .content-overall .content-step .content-step-description {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .is-mobile #actions .img-action-2 .content-overall .content-step .action-btn {
+    height: 36px;
+    margin-top: 10px;
+    width: 144px;
+  }
+
+  .is-mobile #actions .img-action-2 .content-note {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  #home .home-title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .is-mobile #home .home-title {
+    font-size: 22px;
+    line-height: 30px;
   }
 
   .section .section-content {
@@ -119,11 +274,11 @@
   }
 
   #actions .img-action-1 {
-    width: 65%;
+    width: 60%;
   }
 
   #actions .img-action-2 {
-    width: 35%;
+    width: 40%;
   }
 
   #case-study .content {
