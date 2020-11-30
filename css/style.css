@@ -434,8 +434,9 @@ section {
   width: 100%;
 }
 
-#home .home-title span {
+#home .home-title .highlight {
   color: #57f5ff;
+  display: inline;
 }
 
 #problems .fp-tableCell {
@@ -786,30 +787,114 @@ section {
 /*  ------------ about us style--------------*/
 
 #main-about-us {
-  background-image: linear-gradient(to left, #0d2d77, #0752a3);
-  height: 100%;
+  background: linear-gradient(284.13deg, #0F256E 0.55%, #0752A3 100%);
+  height: fit-content;
   width: 100%;
 }
 
 #main-about-us section {
-  height: 100% !important;
+  height: fit-content !important;
   width: 100%;
 }
 
 #contact {
-  padding-top: 3rem;
+  position: relative;
 }
 
-#contact .img-contact-1 {
-  height: 100%;
-  object-fit: contain;
+#contact .contact-title {
+  color: #fff;
+  font-family: 'Conv_Barlow-Bold';
+  font-size: 32px;
+  left: 0;
+  line-height: 38px;
+  position: absolute;
+  text-align: center;
+  top: 16vh;
   width: 100%;
 }
 
-#contact .img-contact-2 {
+#contact .contact-title .highlight {
+  color: #57f5ff;
+  display: inline;
+}
+
+#contact .contact-content {
+  display: grid;
+  gap: 16px 16px;
+  grid-template-columns: 25vw 25vw 25vw;
+  grid-template-rows: 65vh 65vh;
+  justify-content: center;
+  padding-top: 32vh;
+}
+
+#contact .contact-content .contact-item {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
   height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+#contact .contact-content .contact-item .contact-item-brand-circle {
+  margin: 32px auto 16px;
+  width: 37.5%;
+}
+
+#contact .contact-content .contact-item .contact-item-brand-circle .contact-item-brand-img {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  padding-top: 100%;
+  position: relative;
+  width: 100%;
+}
+
+#contact .contact-content .contact-item .contact-item-brand-circle .contact-item-brand-img img {
+  height: 50%;
+  left: 50%;
   object-fit: contain;
-  padding-top: 1rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+#contact .contact-content .contact-item .contact-item-brand-title {
+  color: #fff;
+  font-family: 'Conv_Barlow-Bold';
+  font-size: 24px;
+  line-height: 48px;
+  padding: 0 32px;
+  text-align: center;
+  width: 100%;
+}
+
+#contact .contact-content .contact-item .contact-item-brand-description {
+  color: #fff;
+  font-family: 'Conv_Barlow-Regular';
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0 32px;
+  text-align: center;
+  width: 100%;
+}
+
+#contact .contact-content .contact-item .contact-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  bottom: 32px;
+  color: #fff;
+  font-family: 'Conv_Barlow-Bold';
+  left: 50%;
+  padding: 12px 54px;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+#contact .contact-footer-text {
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
   width: 100%;
 }
 
