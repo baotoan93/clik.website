@@ -768,11 +768,11 @@ section {
 
 #qna2 .img-qna-2-3 {
   bottom: 20px;
+  color: #fff;
   left: 50%;
   object-fit: contain;
   position: absolute;
   transform: translateX(-50%);
-  width: 50%;
 }
 
 .img-top-menu {
