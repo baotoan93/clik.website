@@ -613,8 +613,9 @@ section {
   font-family: 'Conv_Barlow-Regular';
   left: 0;
   position: absolute;
-  right: 0;
-  top: 64px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
 }
 
 #case-study .content .title {
@@ -633,13 +634,15 @@ section {
   display: flex;
   gap: 32px;
   justify-content: center;
-  margin-left: -144px;
-  margin-right: -144px;
+  left: 50%;
   margin-top: 32px;
+  position: relative;
+  transform: translateX(-50%);
+  width: fit-content;
 }
 
 #case-study .content .gallery .gallery-item {
-  height: 480px;
+  height: 60vh;
   position: relative;
   width: 320px;
 }
@@ -657,11 +660,22 @@ section {
   width: 100%;
 }
 
+#case-study .content .gallery .gallery-item .case-study-btn {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: unset;
+  color: #fff;
+  font-family: 'Conv_Barlow-Bold';
+  font-size: 18px;
+  left: 50%;
+  padding: .75rem 1rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #case-study .content .gallery .gallery-item .overlay {
   align-items: center;
-  background: linear-gradient(180deg,
-      rgba(0, 0, 0, 0.32) 0%,
-      rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(to bottom, transparent 0%, #000 100%);
   bottom: 0%;
   display: flex;
   flex-direction: column;
@@ -674,7 +688,7 @@ section {
 }
 
 #case-study .content .gallery .gallery-item .overlay a.btn-detail {
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   border-radius: 30px;
   color: white;
   display: none;
