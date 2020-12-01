@@ -67,13 +67,6 @@ $(".navbar-toggler").on("click", function () {
 });
 
 function ChangeImage() {
-  var src = document.getElementById("image-about-us").src;
-  var image = src.slice(-15);
-  if (image === "contact-1-2.png") {
-    document.getElementById("image-about-us").src = "img/contact-1-3.png";
-  } else {
-    document.getElementById("image-about-us").src = "img/contact-1-2.png";
-  }
 }
 
 function changeImageMobile() {
