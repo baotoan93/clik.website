@@ -943,7 +943,7 @@ section {
 }
 
 #clik-content .contact-item-flip-wrapper .contact-item-content.contact-item-content-flip {
-  padding-top: 24px;
+  padding: 24px 0;
   transform: rotateY(180deg);
 }
 
