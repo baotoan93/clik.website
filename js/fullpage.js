@@ -1964,12 +1964,12 @@
           ) {
             clearTimeout(resizeId);
 
-            // resizeId = setTimeout(function () {
-            //   FP.reBuild(true);
-            //   previousHeight = currentHeight;
-            // }, 100);
-            FP.reBuild(true);
-            previousHeight = currentHeight;
+            resizeId = setTimeout(function () {
+              FP.reBuild(true);
+              previousHeight = currentHeight;
+            }, 100);
+            // FP.reBuild(true);
+            // previousHeight = currentHeight;
           }
         }
       } else {
