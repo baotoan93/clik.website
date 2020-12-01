@@ -156,8 +156,10 @@ function handleClickShowDetail(e) {
   let parent = $(e).closest(".section");
   if (parent.length) parent.addClass("show-detail");
 
-  if ($.fn.fullpage && $.fn.fullpage.setAllowScrolling)
+  if ($.fn.fullpage && $.fn.fullpage.setAllowScrolling) {
     $.fn.fullpage.setAllowScrolling(false);
+    $('#fp-nav').addClass('d-none');
+  }
 
   if (detectMob() && $(e).closest("body")) {
     parent = $(e).closest("body");
@@ -170,8 +172,10 @@ function handleClickCloseDetail(e) {
   let parent = $(e).closest(".section");
   if (parent.length) parent.removeClass("show-detail");
 
-  if ($.fn.fullpage && $.fn.fullpage.setAllowScrolling)
+  if ($.fn.fullpage && $.fn.fullpage.setAllowScrolling) {
     $.fn.fullpage.setAllowScrolling(true);
+    $('#fp-nav').removeClass('d-none');
+  }
 
   if (detectMob() && $(e).closest("body")) {
     parent = $(e).closest("body");

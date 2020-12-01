@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="vi">
   <head>
     <meta
       name="viewport"
@@ -94,23 +94,28 @@
         </div>
         <div class="contact-content">
           <!-- Clik -->
-          <div class="contact-item">
-            <div class="contact-item-content">
-              <div class="contact-item-brand-circle">
-                <div class="contact-item-brand-img">
-                  <img src="img/logo.png" alt="" />
+          <div id="clik-content" class="contact-item">
+            <div class="contact-item-flip-wrapper">
+              <div class="contact-item-content">
+                <div class="contact-item-brand-circle">
+                  <div class="contact-item-brand-img">
+                    <img src="img/logo.png" alt="" />
+                  </div>
                 </div>
+                <div class="contact-item-brand-title">Clik</div>
+                <div class="contact-item-brand-description">
+                  Đơn vị Nghiên cứu - Khai thác Công nghệ dữ liệu (Data) và Diễn
+                  họa nội dung số (Vizualization) chuyên sâu trong lĩnh vực Trang
+                  trí nội thất (Home Furnishing) và Bất động sản (Property
+                  Technology).
+                </div>
+                <button type="button" class="btn btn-light contact-btn" onclick="showContactForm(this)">
+                  Liên hệ
+                </button>
               </div>
-              <div class="contact-item-brand-title">Clik</div>
-              <div class="contact-item-brand-description">
-                Đơn vị Nghiên cứu - Khai thác Công nghệ dữ liệu (Data) và Diễn
-                họa nội dung số (Vizualization) chuyên sâu trong lĩnh vực Trang
-                trí nội thất (Home Furnishing) và Bất động sản (Property
-                Technology).
+              <div class="contact-item-content contact-item-content-flip">
+                <img src="img/about-us-request-form.png" alt="" onclick="hideContactForm(this)" />
               </div>
-              <button type="button" class="btn btn-light contact-btn">
-                Liên hệ
-              </button>
             </div>
           </div>
           <!-- Grande -->
@@ -229,22 +234,28 @@
       </div>
       <div class="contact-content">
         <!-- Clik -->
-        <div class="contact-item">
-          <div class="contact-item-content">
-            <div class="contact-item-brand-circle">
-              <div class="contact-item-brand-img">
-                <img src="img/logo.png" alt="" />
+        <div id="clik-content" class="contact-item">
+          <div class="contact-item-flip-wrapper">
+            <div class="contact-item-content">
+              <div class="contact-item-brand-circle">
+                <div class="contact-item-brand-img">
+                  <img src="img/logo.png" alt="" />
+                </div>
               </div>
+              <div class="contact-item-brand-title">Clik</div>
+              <div class="contact-item-brand-description">
+                Đơn vị Nghiên cứu - Khai thác Công nghệ dữ liệu (Data) và Diễn
+                họa nội dung số (Vizualization) chuyên sâu trong lĩnh vực Trang
+                trí nội thất (Home Furnishing) và Bất động sản (Property
+                Technology).
+              </div>
+              <button type="button" class="btn btn-light contact-btn" onclick="showContactForm(this)">
+                Liên hệ
+              </button>
             </div>
-            <div class="contact-item-brand-title">Clik</div>
-            <div class="contact-item-brand-description">
-              Đơn vị Nghiên cứu - Khai thác Công nghệ dữ liệu (Data) và Diễn họa
-              nội dung số (Vizualization) chuyên sâu trong lĩnh vực Trang trí
-              nội thất (Home Furnishing) và Bất động sản (Property Technology).
+            <div class="contact-item-content contact-item-content-flip">
+              <img src="img/about-us-request-form.png" alt="" onclick="hideContactForm(this)" />
             </div>
-            <button type="button" class="btn btn-light contact-btn">
-              Liên hệ
-            </button>
           </div>
         </div>
         <!-- Grande -->
@@ -356,6 +367,14 @@
           }, 300);
         });
       });
+
+      function showContactForm(e) {
+        $(e).closest('.contact-item').addClass('show-contact');
+      }
+      
+      function hideContactForm(e) {
+        $(e).closest('.contact-item').removeClass('show-contact');
+      }
     </script>
   </body>
 </html>

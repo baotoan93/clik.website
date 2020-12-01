@@ -157,21 +157,19 @@
     bottom: 10px;
   }
 
-  #case-study .content {
-    top: 16px;
-  }
-
   #case-study .content .title {
     font-size: 20px;
     line-height: 30px;
   }
 
   #case-study .content .gallery {
+    gap: 10px;
     margin-top: 15px;
   }
 
   #case-study .content .gallery .gallery-item {
-    height: 265px;
+    height: 500px;
+    width: 250px;
   }
 
   #case-study .content .gallery .gallery-item .overlay {
@@ -338,10 +336,6 @@
     width: 40%;
   }
 
-  #case-study .content {
-    top: 16px;
-  }
-
   #case-study .content .title {
     font-size: 20px;
     line-height: 30px;
@@ -352,7 +346,7 @@
   }
 
   #case-study .content .gallery .gallery-item {
-    height: 265px;
+    height: 400px;
   }
 
   #case-study .content .gallery .gallery-item .overlay {
@@ -934,7 +928,7 @@
   #mobile-main-about-us .contact-content .contact-item {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    padding-top: 150%;
+    padding-top: 160%;
     position: relative;
     width: 100%;
   }
@@ -1008,5 +1002,9 @@
     padding: 20px 0;
     text-align: center;
     width: 100%;
+  }
+
+  #clik-content .contact-item-flip-wrapper .contact-item-content.contact-item-content-flip {
+    padding: 0;
   }
 }

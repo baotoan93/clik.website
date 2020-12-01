@@ -839,6 +839,8 @@ section {
 }
 
 #contact .contact-content .contact-item .contact-item-content {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   height: 100%;
   left: 0;
   position: absolute;
@@ -906,6 +908,48 @@ section {
   color: #fff;
   padding: 20px 0;
   text-align: center;
+  width: 100%;
+}
+
+#clik-content .contact-item-flip-wrapper {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  width: 100%;
+}
+
+#clik-content.show-contact .contact-item-flip-wrapper {
+  transform: rotateY(180deg);
+}
+
+#clik-content .contact-item-flip-wrapper .contact-item-content {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#clik-content.show-contact .contact-item-flip-wrapper .contact-item-content:not(.contact-item-content-flip) {
+  opacity: 0;
+}
+
+#clik-content.show-contact .contact-item-flip-wrapper .contact-item-content-flip {
+  opacity: 1;
+}
+
+#clik-content .contact-item-flip-wrapper .contact-item-content:not(.contact-item-content-flip) {
+  opacity: 1;
+}
+
+#clik-content .contact-item-flip-wrapper .contact-item-content.contact-item-content-flip {
+  padding-top: 24px;
+  transform: rotateY(180deg);
+}
+
+#clik-content .contact-item-flip-wrapper .contact-item-content.contact-item-content-flip img {
+  height: 100%;
+  object-fit: contain;
   width: 100%;
 }
 
