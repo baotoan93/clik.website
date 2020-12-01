@@ -63,6 +63,10 @@
     font-size: 36px;
     line-height: 43px;
   }
+
+  #contact .contact-content .contact-item {
+    padding-top: 140%;
+  }
 }
 
 @media (max-width: 1440px) {
@@ -88,11 +92,14 @@
   .section .section-content .section-content-description {
     width: 80%;
   }
+
+  #contact .contact-content .contact-item {
+    padding-top: 175%;
+  }
 }
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199px) {
-
   #main .solution-btn,
   #main .view-detail-btn {
     font-size: 13px;
@@ -130,6 +137,16 @@
 
   #case-study .content .gallery {
     gap: 20px;
+  }
+
+  #contact .contact-title {
+    font-size: 24px;
+    line-height: 30px;
+    top: 14vh;
+  }
+
+  #contact .contact-content {
+    grid-template-columns: 30vw 30vw 30vw;
   }
 }
 
@@ -279,10 +296,31 @@
     font-size: 22px;
     line-height: 30px;
   }
+
+  #contact .contact-title {
+    font-size: 20px;
+    line-height: 26px;
+    top: 16vh;
+  }
+
+  #contact .contact-content {
+    padding-top: 36vh;
+  }
+
+  #contact .contact-content .contact-item {
+    padding-top: 220%;
+  }
+
+  #contact .contact-content .contact-item .contact-item-content .contact-item-brand-description {
+    padding: 0 12px;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767px) {
+  .site_header .nav-item.nav-link {
+    font-size: 12px;
+  }
 
   #main .solution-btn,
   #main .view-detail-btn {
@@ -342,6 +380,35 @@
   .section .section-content .content-description {
     font-size: 10px;
     line-height: 14px;
+  }
+
+  #contact .contact-title {
+    font-size: 16px;
+    line-height: 22px;
+    top: 16vh;
+  }
+
+  #contact .contact-content {
+    gap: 8px 8px;
+  }
+
+  #contact .contact-content .contact-item {
+    padding-top: 210%;
+  }
+
+  #contact .contact-content .contact-item .contact-item-content .contact-item-brand-circle {
+    margin-top: 20px;
+  }
+
+  #contact .contact-content .contact-item .contact-item-content .contact-item-brand-description {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  #contact .contact-content .contact-item .contact-item-content .contact-btn {
+    bottom: 20px;
+    font-size: 12px;
+    padding: 8px 30px;
   }
 }
 

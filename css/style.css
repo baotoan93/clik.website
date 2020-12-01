@@ -785,11 +785,14 @@ section {
 }
 
 /*  ------------ about us style--------------*/
-
 #main-about-us {
   background: linear-gradient(284.13deg, #0F256E 0.55%, #0752A3 100%);
   height: fit-content;
   width: 100%;
+}
+
+#main-about-us::-webkit-scrollbar {
+  width: 0;
 }
 
 #main-about-us section {
@@ -822,7 +825,7 @@ section {
   display: grid;
   gap: 16px 16px;
   grid-template-columns: 25vw 25vw 25vw;
-  grid-template-rows: 65vh 65vh;
+  grid-template-rows: 1fr 1fr;
   justify-content: center;
   padding-top: 32vh;
 }
@@ -830,17 +833,25 @@ section {
 #contact .contact-content .contact-item {
   background: rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  height: 100%;
+  padding-top: 130%;
   position: relative;
   width: 100%;
 }
 
-#contact .contact-content .contact-item .contact-item-brand-circle {
+#contact .contact-content .contact-item .contact-item-content {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#contact .contact-content .contact-item .contact-item-content .contact-item-brand-circle {
   margin: 32px auto 16px;
   width: 37.5%;
 }
 
-#contact .contact-content .contact-item .contact-item-brand-circle .contact-item-brand-img {
+#contact .contact-content .contact-item .contact-item-content .contact-item-brand-circle .contact-item-brand-img {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   padding-top: 100%;
@@ -848,7 +859,7 @@ section {
   width: 100%;
 }
 
-#contact .contact-content .contact-item .contact-item-brand-circle .contact-item-brand-img img {
+#contact .contact-content .contact-item .contact-item-content .contact-item-brand-circle .contact-item-brand-img img {
   height: 50%;
   left: 50%;
   object-fit: contain;
@@ -858,7 +869,7 @@ section {
   width: 50%;
 }
 
-#contact .contact-content .contact-item .contact-item-brand-title {
+#contact .contact-content .contact-item .contact-item-content .contact-item-brand-title {
   color: #fff;
   font-family: 'Conv_Barlow-Bold';
   font-size: 24px;
@@ -868,7 +879,7 @@ section {
   width: 100%;
 }
 
-#contact .contact-content .contact-item .contact-item-brand-description {
+#contact .contact-content .contact-item .contact-item-content .contact-item-brand-description {
   color: #fff;
   font-family: 'Conv_Barlow-Regular';
   font-size: 16px;
@@ -878,7 +889,7 @@ section {
   width: 100%;
 }
 
-#contact .contact-content .contact-item .contact-btn {
+#contact .contact-content .contact-item .contact-item-content .contact-btn {
   background-color: transparent;
   border: 2px solid #fff;
   border-radius: 30px;
