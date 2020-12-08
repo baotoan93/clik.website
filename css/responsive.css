@@ -566,10 +566,15 @@
     line-height: 24px;
   }
 
-  #mobile-main .img-mobile-solutions {
-    background-image: url('../img/solution-1-1.jpg');
+  #solutionMobileOMOBanner.section-fs-banner.fsbanner {
     height: 220px;
-    margin: 0;
+    position: relative;
+    width: 100%;
+  }
+
+  #solutionMobileOMOBanner.section-fs-banner.fsbanner>div .name {
+    bottom: 0;
+    font-size: 11px;
   }
 
   #mobile-main .img-mobile-solutions2 {

@@ -439,6 +439,46 @@ section {
   display: inline;
 }
 
+#solutionOMOBanner.section-fs-banner.fsbanner,
+#solutionMobileOMOBanner.section-fs-banner.fsbanner {
+  height: 77%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #053d79;
+}
+
+#solutionOMOBanner.section-fs-banner.fsbanner>div,
+#solutionMobileOMOBanner.section-fs-banner.fsbanner>div {
+  background-size: cover;
+  box-shadow: -10px 0px 10px 1px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+}
+
+#solutionOMOBanner.section-fs-banner.fsbanner>div .name,
+#solutionMobileOMOBanner.section-fs-banner.fsbanner>div .name {
+  bottom: 10px;
+  color: #fff;
+  display: block;
+  font-family: 'Conv_Barlow-Bold';
+  font-size: 20px;
+  left: 10px;
+  position: absolute;
+}
+
+#solutionOMOBanner.section-fs-banner.fsbanner>div .name.minimized,
+#solutionMobileOMOBanner.section-fs-banner.fsbanner>div .name.minimized {
+  bottom: -13px;
+  left: 0;
+  transform: rotate(-90deg);
+  transform-origin: left top 0;
+}
+
 #problems .fp-tableCell {
   position: relative;
 }

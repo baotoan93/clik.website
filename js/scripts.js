@@ -1,4 +1,5 @@
-var isInitFullPage, isShowDetail;
+var isInitFullPage, isShowDetail, isInitBanner;
+var fsBannerConfig, fsBannerMobileConfig;
 
 /* ===============  WoW Animations ========================== */
 $(document).ready(function () {
@@ -16,6 +17,14 @@ $(document).ready(function () {
     initFullPageJs();
   } else {
     $("#mobile-main").height(window.innerHeight);
+  }
+
+  // the div must have the fsbanner class for styling,
+  // init fs banner jquery.
+  fsBannerConfig = $("#solutionOMOBanner").fsBanner();
+  fsBannerMobileConfig = $("#solutionMobileOMOBanner").fsBanner();
+  if (window.innerWidth <= 575) {
+    fsBannerMobileConfig.selectItem($("#defaultSelect"), 0);
   }
 });
 
@@ -47,6 +56,10 @@ $(window).resize(() => {
       $("#mobile-main").height(window.innerHeight);
       $("#main").css("display", "none");
     }
+
+    if (fsBannerConfig && fsBannerConfig) {
+      fsBannerConfig.handleResize();
+    }
   }, 300);
 });
 
@@ -66,8 +79,7 @@ $(".navbar-toggler").on("click", function () {
   $(".navbar-toggler svg").toggleClass("fa-times").toggleClass("fa-bars");
 });
 
-function ChangeImage() {
-}
+function ChangeImage() {}
 
 function changeImageMobile() {
   var src = document.getElementById("image-plan-pricing-mobile").src;
@@ -124,18 +136,23 @@ function initFullPageJs() {
 
     slidesNavigation: false,
     loopHorizontal: false,
-    onLeave: function () {
+    onLeave: function (_, destination) {
+      if (!isInitBanner && destination === 3) {
+        fsBannerConfig.selectItem($("#defaultSelect"), 0);
+        isInitBanner = true;
+      }
+
       if (!isShowDetail) return;
 
       isShowDetail = false;
       if ($.fn.fullpage && $.fn.fullpage.setAllowScrolling)
         $.fn.fullpage.setAllowScrolling(true);
 
-      let parent = $('#solutions4');
+      let parent = $("#solutions4");
       if (Object.values(parent).length) {
         parent.removeClass("show-detail");
       } else {
-        $('body').removeClass("show-detail");
+        $("body").removeClass("show-detail");
       }
     },
   });
@@ -158,7 +175,7 @@ function handleClickShowDetail(e) {
 
   if ($.fn.fullpage && $.fn.fullpage.setAllowScrolling) {
     $.fn.fullpage.setAllowScrolling(false);
-    $('#fp-nav').addClass('d-none');
+    $("#fp-nav").addClass("d-none");
   }
 
   if (detectMob() && $(e).closest("body")) {
@@ -174,7 +191,7 @@ function handleClickCloseDetail(e) {
 
   if ($.fn.fullpage && $.fn.fullpage.setAllowScrolling) {
     $.fn.fullpage.setAllowScrolling(true);
-    $('#fp-nav').removeClass('d-none');
+    $("#fp-nav").removeClass("d-none");
   }
 
   if (detectMob() && $(e).closest("body")) {
