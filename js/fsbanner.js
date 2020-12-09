@@ -77,16 +77,12 @@ var fsBanner = function (container, options) {
 
       if (self.options.trigger == "mouse") {
         $item.on("mouseenter", function () {
-          self.selectItem($item, i, true);
+          if (self.ilast !== i) {
+            self.selectItem($item, i, true);
+          }
         });
       }
     });
-
-    if (self.options.trigger == "mouse") {
-      this.container.on("mouseleave", function () {
-        self.resetcss();
-      });
-    }
 
     this.resetcss();
     this.container.show();

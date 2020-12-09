@@ -21,8 +21,8 @@ $(document).ready(function () {
 
   // the div must have the fsbanner class for styling,
   // init fs banner jquery.
-  fsBannerConfig = $("#solutionOMOBanner").fsBanner();
-  fsBannerMobileConfig = $("#solutionMobileOMOBanner").fsBanner();
+  fsBannerConfig = $("#solutionOMOBanner").fsBanner({ trigger: "mouse" });
+  fsBannerMobileConfig = $("#solutionMobileOMOBanner").fsBanner({ trigger: "mouse" });
   if (window.innerWidth <= 575) {
     fsBannerMobileConfig.selectItem($("#defaultSelect"), 0);
   }

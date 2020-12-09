@@ -441,13 +441,13 @@ section {
 
 #solutionOMOBanner.section-fs-banner.fsbanner,
 #solutionMobileOMOBanner.section-fs-banner.fsbanner {
+  background: #053d79;
   height: 77%;
   left: 0;
   overflow: hidden;
   position: absolute;
   top: 0;
   width: 100%;
-  background: #053d79;
 }
 
 #solutionOMOBanner.section-fs-banner.fsbanner>div,
@@ -1217,4 +1217,8 @@ section {
   bottom: unset;
   left: unset;
   position: unset;
+}
+
+#website-marker .website-marker__img {
+  width: 100%;
 }
