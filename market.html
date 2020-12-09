@@ -72,6 +72,13 @@
         $('#website-marker').width(window.innerWidth);
         $('#website-marker').height(window.innerHeight);
       });
+
+      $(window).resize(() => {
+        setTimeout(() => {
+          $('#website-marker').width(window.innerWidth);
+          $('#website-marker').height(window.innerHeight);
+        }, 300);
+      });
     </script>
   </body>
 </html>

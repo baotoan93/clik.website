@@ -479,6 +479,31 @@ section {
   transform-origin: left top 0;
 }
 
+#solutions4 #section-embedded {
+  height: 77%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#solutions4 #section-embedded iframe {
+  height: 100%;
+  width: 100%;
+}
+
+#solutions4-mobile {
+  height: 220px;
+  margin: 0;
+}
+
+#solutions4-mobile #section-embedded,
+#solutions4-mobile #section-embedded iframe {
+  width: 100%;
+  height: 100%;
+}
+
 #problems .fp-tableCell {
   position: relative;
 }
