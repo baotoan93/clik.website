@@ -500,8 +500,8 @@ section {
 
 #solutions4-mobile #section-embedded,
 #solutions4-mobile #section-embedded iframe {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 #problems .fp-tableCell {
@@ -1242,6 +1242,16 @@ section {
   bottom: unset;
   left: unset;
   position: unset;
+}
+
+#main #solutions5 .content-actions {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+#main #solutions5 .content-actions .multi-view {
+  margin-left: 15px;
 }
 
 #website-marker .website-marker__img {
