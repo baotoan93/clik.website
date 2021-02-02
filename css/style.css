@@ -1202,6 +1202,11 @@ section {
   width: 100%;
 }
 
+.show-detail .solution-detail-content iframe {
+  width: 100%;
+  height: 100%;
+}
+
 #main #solutions4 .content-actions {
   display: flex;
   justify-content: space-between;
