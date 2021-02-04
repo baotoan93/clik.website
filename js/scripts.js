@@ -201,39 +201,3 @@ function handleClickCloseDetail(e) {
     if (parent.length) parent.removeClass("show-detail");
   }
 }
-
-// Location section
-function handleClickLocationShowDetail(e) {
-  isShowDetail = true;
-  let parent = $(e).closest(".section");
-  if (parent.length) parent.addClass("show-detail");
-
-  if ($.fn.fullpage && $.fn.fullpage.setAllowScrolling) {
-    $.fn.fullpage.setAllowScrolling(false);
-    $("#fp-nav").addClass("d-none");
-  }
-
-  let detailContentParent = $(e).closest(".fp-tableCell");
-  const iframeWrapper = detailContentParent.find(".solution-detail-content");
-  console.log("iframeWrapper", iframeWrapper);
-  $(
-    '<iframe src="https://stag-bds.clik.vn/en/project/timesgardenhalong?tb=0#v=location" frameborder="0" allowfullscreen></iframe>'
-  ).appendTo(iframeWrapper);
-}
-
-function handleClickLocationCloseDetail(e) {
-  isShowDetail = false;
-  let parent = $(e).closest(".section");
-  if (parent.length) parent.removeClass("show-detail");
-
-  if ($.fn.fullpage && $.fn.fullpage.setAllowScrolling) {
-    $.fn.fullpage.setAllowScrolling(true);
-    $("#fp-nav").removeClass("d-none");
-  }
-
-  let detailContentParent = $(e).closest(".fp-tableCell");
-  const iframeWrapper = detailContentParent.find(
-    ".solution-detail-content iframe"
-  );
-  iframeWrapper.remove();
-}
